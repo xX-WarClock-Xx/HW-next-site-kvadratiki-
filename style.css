@@ -41,7 +41,6 @@ body{
 
 body {
     background-color: black; 
-    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +48,10 @@ body {
     padding: 20px;
 }
 
-
+.row-left{
+    display: flex;
+    flex-direction: row;
+}
 .main-container {
     display: flex;
     width: 100%;
@@ -96,6 +98,7 @@ body {
 }
 
 .card-wide-bottom {
+    margin-right: -150px;
     flex: 30; 
 }
 
@@ -119,5 +122,6 @@ body {
 }
 
 .card-square-bottom {
+    margin-left: 150px;
     flex: 30; 
 }
