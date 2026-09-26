@@ -1,4 +1,38 @@
-/* Базовые настройки для всего сайта */
+/* 
+#title{
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    margin: 0 auto 0 auto;
+    align-items: center;
+    
+}
+
+#list{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#first{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto 0 auto;
+}
+#first:hover{
+    transform: translateY(20px);
+}
+#title-list{
+    font-size: small;
+    color: lightgray;
+}
+
+body{
+    background-color: lightgray;
+    align-items: center;
+} */
+ 
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +40,7 @@
 }
 
 body {
-    background-color: black; /* Черный фон как на картинке */
+    background-color: black; 
     font-family: sans-serif;
     display: flex;
     justify-content: center;
@@ -15,23 +49,23 @@ body {
     padding: 20px;
 }
 
-/* Главный контейнер, который выстраивает 3 колонки в ряд */
+
 .main-container {
     display: flex;
     width: 100%;
     max-width: 1100px;
-    height: 750px; /* Фиксированная высота, чтобы пропорции держались */
-    gap: 15px; /* Отступы между колонками */
+    height: 750px; 
+    gap: 15px; 
 }
 
-/* Общие стили для всех трех колонок */
+
 .column {
     display: flex;
-    flex-direction: column; /* Элементы внутри колонки идут сверху вниз */
-    gap: 15px; /* Отступы между карточками внутри колонки */
+    flex-direction: column; 
+    gap: 15px; 
 }
 
-/* Боковые колонки занимают по 25% ширины экрана, а центральная — 50% */
+
 .side-column {
     flex: 25;
 }
@@ -40,10 +74,10 @@ body {
     flex: 50;
 }
 
-/* Общий стиль для каждой белой карточки */
+
 .card {
     background-color: white;
-    border-radius: 15px; /* Скругленные углы */
+    border-radius: 15px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,38 +86,38 @@ body {
     color: darkgray;
 }
 
-/* --- Настройка высоты для карточек левой и правой колонки --- */
+
 .card-tall {
-    flex: 43; /* Высокие верхние блоки */
+    flex: 43; 
 }
 
 .card-square {
-    flex: 27; /* Средний квадратный блок слева */
+    flex: 27; 
 }
 
 .card-wide-bottom {
-    flex: 30; /* Нижний левый блок */
+    flex: 30; 
 }
 
 .card-tall-bottom {
-    flex: 57; /* Правый нижний вертикальный блок */
+    flex: 57; 
 }
 
-/* --- Настройка карточек центральной колонки --- */
+
 .center-top-row {
-    display: flex; /* Выстраивает блоки 2 и 3 в один ряд */
+    display: flex; 
     gap: 15px;
-    flex: 25; /* Высота верхнего ряда */
+    flex: 25; 
 }
 
 .card-small {
-    flex: 1; /* Делят пространство верхнего ряда поровну */
+    flex: 1; 
 }
 
 .card-main {
-    flex: 45; /* Центральный самый большой блок */
+    flex: 45; 
 }
 
 .card-square-bottom {
-    flex: 30; /* Нижний центральный блок */
+    flex: 30; 
 }
